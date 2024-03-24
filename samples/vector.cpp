@@ -24,6 +24,6 @@ int sample_vector(void) {
     sort(v.rbegin(), v.rend());
     
     REP(i, v.size()) {
-    	cout << v[i] << endl;;
+    	cout << v[i] << endl;
     }
 }
