@@ -29,3 +29,11 @@ vector<LL> sample_vector(void) {
 
     return v;
 }
+
+LL vector_min(vector<LL> v) {
+    return *min_element(v.begin(), v.end());
+}
+
+LL vector_max(vector<LL> v) {
+    return *max_element(v.begin(), v.end());
+}
