@@ -2,11 +2,11 @@
 #include <algorithm>
 #include <vector>
 
-#define REP(i,n) for(long long i=0;i<(n);i++)
+#define REP(i, n) for(long long i=0;i<(n);i++)
 #define LL long long
 using namespace std;
 
-int sample_vector(void) {
+vector<LL> sample_vector(void) {
     // template
     ios::sync_with_stdio(false);
 
@@ -22,8 +22,10 @@ int sample_vector(void) {
     sort(v.begin(), v.end());
     // 降順にsortする
     sort(v.rbegin(), v.rend());
-    
+
     REP(i, v.size()) {
-    	cout << v[i] << endl;
+        cout << v[i] << endl;
     }
+
+    return v;
 }
