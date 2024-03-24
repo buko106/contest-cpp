@@ -3,6 +3,7 @@
 #include <vector>
 #include <iomanip>
 #include <cmath>
+#include <string>
 
 #define REP(i, n) for(long long i=0;i<(n);i++)
 #define LL long long
