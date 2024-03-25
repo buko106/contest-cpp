@@ -30,11 +30,13 @@ vector<LL> sample_vector(void) {
     return v;
 }
 
-LL vector_min(vector<LL> v) {
+template<typename T>
+T vector_min(vector<T> v) {
     return *min_element(v.begin(), v.end());
 }
 
-LL vector_max(vector<LL> v) {
+template<typename T>
+T vector_max(vector<T> v) {
     return *max_element(v.begin(), v.end());
 }
 
