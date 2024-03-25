@@ -37,3 +37,18 @@ LL vector_min(vector<LL> v) {
 LL vector_max(vector<LL> v) {
     return *max_element(v.begin(), v.end());
 }
+
+template<typename T>
+istream &operator>>(istream &is, vector<T> &v) {
+    for (LL i = 0; i < v.size(); i++)
+        is >> v[i];
+    return is;
+}
+
+template<typename T>
+ostream &operator<<(ostream &os, const vector<T> &v) {
+    for (LL i = 0; i < v.size(); i++) {
+        os << v[i] << (i + 1 != v.size() ? " " : "");
+    }
+    return os;
+}
